@@ -1,7 +1,26 @@
 <!doctype html>
 <html lang="en">
   <head>
-
+    <script>var MainPhotos = document.querySelector("#mainphotos");
+var ind = 0;
+var max = 2;
+function nextPhoto(){
+    ind++;
+    if(ind > max){
+        ind = 0;
+    }
+    MainPhotos.src = `public/croissant${ind}.png`
+}
+function prevPhoto(){
+    ind--;
+    if(ind < 0){
+        ind = max;
+    }
+    MainPhotos.src = `public/croissant${ind}.png`
+}
+document.querySelector(".left").addEventListener("click", prevPhoto);
+document.querySelector(".right").addEventListener("click", nextPhoto);
+</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
