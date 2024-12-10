@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+require("/style.css");
 var Slider = /** @class */ (function () {
     function Slider(trackSelector) {
         this.currentIndex = 0;
@@ -19,6 +22,24 @@ var Slider = /** @class */ (function () {
     return Slider;
 }());
 document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById("right").onclick = nextPhoto;
+    document.getElementById("left").onclick = prevPhoto;
     new Slider('.slider');
 });
-    
+var MainPhotos = document.getElementById("mainphotos");
+var ind = 0;
+var max = 2;
+function nextPhoto() {
+    ind++;
+    if (ind > max) {
+        ind = 0;
+    }
+    MainPhotos.src = "public/croissant".concat(ind, ".png");
+}
+function prevPhoto() {
+    ind--;
+    if (ind < 0) {
+        ind = max;
+    }
+    MainPhotos.src = "public/croissant".concat(ind, ".png");
+}
