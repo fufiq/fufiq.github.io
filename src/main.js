@@ -21,7 +21,7 @@ var Slider = /** @class */ (function () {
 document.addEventListener('DOMContentLoaded', function () {
     new Slider('.slider');
 });
-var MainPhotos = document.querySelector("mainphotos");
+var MainPhotos = document.querySelector("#mainphotos");
 var ind = 0;
 var max = 2;
 function nextPhoto(){
@@ -38,5 +38,5 @@ function prevPhoto(){
     }
     MainPhotos.src = `public/croissant${ind}.png`
 }
-document.querySelector("left").addEventListener("click", prevPhoto);
-document.querySelector("right").addEventListener("click", nextPhoto);
+document.querySelector(".left").addEventListener("click", prevPhoto);
+document.querySelector(".right").addEventListener("click", nextPhoto);
