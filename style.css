@@ -24,6 +24,10 @@ html, body {
   transition: left 0.3s;
   z-index: 1000;
 }
+#mainphotos{
+  max-width: 898px;
+  max-height: 565px;
+}
 
 .nav ul {
   padding-top: 60px;

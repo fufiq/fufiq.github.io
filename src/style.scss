@@ -2,6 +2,11 @@
       scroll-behavior: smooth;
       margin: 0;
     }
+    #mainphotos{
+    max-width: 898px;
+    max-height: 565px;
+    }
+
 
     .menu { display: none;position: fixed; top: 20px; left: 20px; font-size: 30px; cursor: pointer; z-index: 10010; }
     .nav { position: fixed; top: 0; left: -200px; width: 200px; height: 100%; background: #FFC3A0; color: black; transition: left 0.3s; z-index: 1000}
