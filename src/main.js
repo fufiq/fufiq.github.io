@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-require("/style.css");
 var Slider = /** @class */ (function () {
     function Slider(trackSelector) {
         this.currentIndex = 0;
