@@ -99,6 +99,10 @@ html, body {
   align-self: flex-start;
   justify-self: flex-end;
 }
+.popup__container img:hover {
+  background-color: rgba(255, 0, 200, 0.3);
+  border-radius: 15px;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto";
@@ -128,7 +132,8 @@ header {
 }
 header img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 nav {
@@ -224,8 +229,13 @@ header a {
 .first img {
   grid-row: 1/8;
   grid-column: 3/8;
-  width: 100%;
-  height: 100%;
+  width: auto;
+  object-fit: contain;
+  height: auto;
+}
+
+header img:hover {
+  background-color: rgba(255, 0, 200, 0.08);
 }
 
 .first .left {
@@ -247,6 +257,12 @@ header a {
   width: 4rem; /* 50px */
   height: 2.25rem; /* 20px */
 }
+.right:hover{
+  background-color: rgba(255,0,200, 0.1);
+}
+.left:hover{
+  background-color: rgba(255,0,200, 0.1);
+}
 
 .second {
   padding: 4rem 0;
@@ -259,8 +275,9 @@ header a {
   border-bottom: 2px solid white;
 }
 .second img {
-  width: 30%;
-  height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .second .second__title {
@@ -372,7 +389,8 @@ header a {
 
 .third img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  object-fit: contain;
   grid-row: span 4;
   grid-column: 1;
 }
@@ -409,7 +427,8 @@ header a {
 
 .fourth__card img {
   width: 100%;
-  height: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .fourth__card h3 {
@@ -489,6 +508,8 @@ header a {
 .fourth + img {
   margin-top: 4.5rem;
   width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .fifth__card {
@@ -514,8 +535,9 @@ header a {
   line-height: 1.75rem;
 }
 .fifth__card img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 .fifth {
@@ -577,8 +599,9 @@ header a {
   font-family: "Roboto";
 }
 .six img {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 .six :nth-child(1) {
   grid-row: 1;
@@ -656,7 +679,8 @@ button:hover {
 .seven .slider .slide img {
   z-index: 1;
   width: 100%;
-  height: 100%;
+  height: auto;
+  object-fit: contain;
   border-radius: 16px;
   object-fit: cover;
 }
@@ -711,8 +735,9 @@ footer {
   height: 100%;
 }
 footer img {
-  width: 73%;
-  height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
 }
 footer h3 {
   font-size: 1.44rem;

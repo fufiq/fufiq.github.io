@@ -16,7 +16,7 @@
     <form id="popupform" onsubmit="event.preventDefault();">
       <p>We're focusing on London to start with, please enter your post code here to see if you're within our delivery zone!</p>
       <input type="text" name="popup" id="popuptext" placeholder="Post code" />
-      <button type="submit">Check</button>
+      <button type="submit" onclick="alert('Sorry! We cant deliver to you now')">Check</button>
     </form>
     <img src="public/close.png" onclick="document.getElementById('popup').remove();" alt="close"/>
   </div>
@@ -41,16 +41,16 @@
         <a href="#ourstory">OUR STORY</a>
         <a href="#whoistarla">WHO IS TARLA?</a>
       </nav>
-        <img class="login" src="public/login.png" alt="login">
+        <img class="login" src="public/login.png" alt="login" onclick="window.location = 'login'">
         <p class="login">Log in</p>
-        <img class="cart" src="public/cart.png" alt="cart">
+        <img class="cart" src="public/cart.png" alt="cart" onclick="window.location = 'cart'">
         <p class="cart">Cart</p>
     </header>
   <main>
     <section class="first" id="home">
       <h1>Fresh <span>pastry kits</span></h1>
       <p>Bringing the smells and tastes of your favourite patisserie to your home. Our kits have everything you need to easily make killer pastries every time. We’ve done the tricky bits so all you need to do is roll, proof and bake!</p>
-      <button class="shop">Shop pastry kits</button>
+      <button class="shop" onclick="window.location = '#shop'">Shop pastry kits</button>
       <img src="public/croissant0.png" alt="croissant" id="mainphotos">
       <button class="left" id="left"></button>
       <button class="right" id="right"></button>
@@ -74,14 +74,14 @@
       <h3>TAKE THE <span>CREDIT</span></h3>
       <p>It was all you, nudge-nudge wink-wink. We're just happy to be your loyal side-kick.</p>
 
-      <button class="second__buttonblue">
+      <button class="second__buttonblue" onclick="window.location = '#shop'">
         Shop pastry kits
       </button>
     </section>
     <section class="third">
       <img src="public/sliced.png" alt="sliced">
       <h2 class="third__text">Freshly baked means fresh bakery smells filling your home, warm oozey pastries on your plates, and never needing to get out of your PJs.</h2>
-      <button class="third__buttonblue">
+      <button class="third__buttonblue" onclick="window.location = '#shop'">
         Shop pastry kits
       </button>
     </section>
@@ -91,37 +91,37 @@
         <img class="fourth__card__image" src="public/croissant1.png" alt="croissant">
         <h3>ALL-BUTTER <span>CROISSANT</span></h3>
         <p>KIT OF 6- £12</p>
-        <button>Add to cart</button>
+        <button onclick="window.location = 'cart'">Add to cart</button>
       </div>
       <div class="fourth__card">
         <img class="fourth__card__image" src="public/croissant2.png" alt="croissant">
         <h3>ALMOND <span>CROISSANT</span></h3>
         <p>KIT OF 6- £13.50</p>
-        <button>Add to cart</button>
+        <button onclick="window.location = 'cart'">Add to cart</button>
       </div>
       <div class="fourth__card">
         <img class="fourth__card__image" src="public/croissant3.png" alt="croissant">
         <h3>RASPBERRY<span>DANISH</span></h3>
         <p>KIT OF 6 - £13.50</p>
-        <button>Add to cart</button>
+        <button onclick="window.location = 'cart'">Add to cart</button>
       </div>
       <div class="fourth__card">
         <img class="fourth__card__image" src="public/croissant4.png" alt="croissant">
         <h3>PAIN AUX <span>RAISINS</span></h3>
         <p>KIT OF 6 - £13.50</p>
-        <button>Add to cart</button>
+        <button onclick="window.location = 'cart'">Add to cart</button>
       </div>
       <div class="fourth__card">
         <img class="fourth__card__image" src="public/croissant5.png" alt="croissant">
         <h3>APRICOT <span>DANISH</span></h3>
         <p>KIT OF 6 - £13.50</p>
-        <button>Add to cart</button>
+        <button onclick="window.location = 'cart'">Add to cart</button>
       </div>
       <div class="fourth__card">
         <img class="fourth__card__image" src="public/croissant6.png" alt="croissant">
         <h3>PAIN AU <span>CHOCOLAT</span></h3>
         <p>KIT OF 6 - £13.50</p>
-        <button>Add to cart</button>
+        <button onclick="window.location = 'cart'">Add to cart</button>
       </div>
     </section>
     <img src="public/photo.png" alt="photo_large">
@@ -145,12 +145,12 @@
       <div class="six__card">
         <p>AMAZING INGREDIENTS</p>
         <h3>We like to keep things simple and authentic. We’ve sourced the very best from the very best, from our Poitou-Charentes butter to our Valrhona chocolate batons.</h3>
-        <button>Read more</button>
+        <button onclick="window.location = 'story'">Read more</button>
       </div>
       <div class="six__card">
         <p>LEGENDARY BAKES</p>
           <h3>The inspiration for our brand and our guiding principles is the Legend of El Tarlà. A young man who brought joy to the isolated citizens of Girona during an outbreak of the plague.</h3>
-        <button>Read more</button>
+        <button onclick="window.location = 'story'">Read more</button>
       </div>
       <img src="public/legend.png " alt="legendary">
     </section>
@@ -174,9 +174,8 @@
       <p>@2021 Tarla</p>
       <h3>Account</h3>
       <nav>
-        <a href="#">SIGN UP</a>
-        <a href="#">LOG IN</a>
-        <a href="#">SIGN OUT</a>
+        <a href="signup">SIGN UP</a>
+        <a href="login">LOG IN</a>
       </nav>
       <h3>        Our company
       </h3>
@@ -187,20 +186,20 @@
       </nav>
       <h3>Resources</h3>
       <nav>
-        <a href="#">FAQ</a>
-        <a href="#">CONTACT</a>
-        <a href="#">BECOME AN INFLUENCER</a>
-        <a href="#">PRIVACY POLICY</a>
-        <a href="#">TERMS OF SERVICE</a>
-        <a href="#">REFUND POLICY</a>
+        <a href="faq">FAQ</a>
+        <a href="contact">CONTACT</a>
+        <a href="joinus">BECOME AN INFLUENCER</a>
+        <a href="policy">PRIVACY POLICY</a>
+        <a href="terms">TERMS OF SERVICE</a>
+        <a href="refund">REFUND POLICY</a>
       </nav>
       <h3>@tarlabakes</h3>
       <div class="links">
-        <img src="public/twitter.png" alt="tw">
-        <img src="public/facebook.png" alt="fb">
-        <img src="public/inst.png" alt="inst">
-        <img src="public/tt.png" alt="tt">
-        <img src="public/spotify.png" alt="sp">
+        <img src="public/twitter.png" alt="tw" onclick="window.location = 'https://twitter.com/tarlabakes'">
+        <img src="public/facebook.png" alt="fb" onclick="window.location = 'https://www.facebook.com/tarlabakes'">
+        <img src="public/inst.png" alt="inst" onclick="window.location = 'https://instagram.com/tarlabakes'">
+        <img src="public/tt.png" alt="tt" onclick="window.location = 'https://tiktok.com/tarlabakes'">
+        <img src="public/spotify.png" alt="sp" onclick="window.location = 'https://open.spotify.com/user/tarlabakes'">
       </div>
 
 
