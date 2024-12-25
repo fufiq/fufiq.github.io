@@ -629,6 +629,7 @@ a:hover {
   background-color: rgba(255, 0 , 200, 0.08);
   color: darkviolet;
   cursor: pointer;
+  border-radius: 16px ;
 }
 
 button:hover {
@@ -757,6 +758,11 @@ footer nav a {
   line-height: 1.5rem;
   text-decoration: none;
   color: black;
+}
+footer img:hover{
+  background-color: rgba(255, 0 , 200, 0.08);
+  border-radius: 12px;
+  cursor: pointer;
 }
 footer .links {
   display: flex;
