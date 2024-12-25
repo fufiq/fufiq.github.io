@@ -226,11 +226,14 @@ header a {
   font-family: "Roboto";
 }
 
-.first img {
+.first .image{
   grid-row: 1/8;
   grid-column: 3/8;
-  width: auto;
-  object-fit: contain;
+  overflow: hidden;
+}
+.first img {
+  width: 100%;
+  object-fit: cover;
   height: auto;
 }
 
@@ -535,7 +538,7 @@ header img:hover {
   line-height: 1.75rem;
 }
 .fifth__card img {
-  width: auto;
+  width: 100%;
   height: auto;
   object-fit: contain;
 }
@@ -599,7 +602,7 @@ header img:hover {
   font-family: "Roboto";
 }
 .six img {
-  width: auto;
+  width: 100%;
   height: auto;
   object-fit: contain;
 }
@@ -680,7 +683,6 @@ button:hover {
   z-index: 1;
   width: 100%;
   height: auto;
-  object-fit: contain;
   border-radius: 16px;
   object-fit: cover;
 }
@@ -817,7 +819,7 @@ html {
     grid-template-rows: 2rem 5.6875rem 5.6875rem fit-content(12rem) 3.625rem 3.8rem 1fr 3rem; /* 91px, 91px, 192px, 58px, 32px */
     max-height: 100vh;
   }
-  .first img {
+  .first .image {
     grid-row: 7/9;
     grid-column: span 7;
   }
